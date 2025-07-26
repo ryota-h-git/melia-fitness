@@ -1,0 +1,52 @@
+@use "../global" as global;
+
+.p-qa {
+  padding-top: 56px;
+}
+.p-qa__wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.p-qa__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.p-qa__q {
+    display: flex;
+    gap: 13px;
+    color: #000;
+font-family: "Yu Mincho";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 28.8px; /* 180% */
+letter-spacing: 0.32px;
+}
+.p-qa__label {
+  color: global.$main-color;
+  text-align: center;
+  font-family: global.$ff-en;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 100% */
+  letter-spacing: 2px;
+}
+.p-qa__a {
+    display: flex;
+    gap: 13px;
+
+    & .p-qa__label {
+        color: global.$text-color;
+    }
+}
+.p-qa__img {
+    height: 225px;
+    margin: 0 calc(50% - 50vw);
+	width: 100vw;
+    background: url(../img/qa-img.png) no-repeat center center / contain;
+}

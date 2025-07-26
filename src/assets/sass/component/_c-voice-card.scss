@@ -1,0 +1,66 @@
+@use "../global" as global;
+
+.c-voice-card {
+  display: flex;
+  flex-direction: column;
+
+  @include global.mq(pc) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.c-voice-card__img {
+  width: 100%;
+  height: 253px;
+  position: relative;
+  overflow: hidden;
+
+  @include global.mq(pc) {
+    width: 450px;
+    height: 340px;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    translate: -50% 0;
+    height: 100%;
+  }
+}
+
+.c-voice-card__text-wrap {
+  max-width: 542px;
+}
+.c-voice-card__title {
+  color: global.$main-color;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 1px;
+  margin-top: 17px;
+
+  @include global.mq(pc) {
+    font-size: 24px;
+  }
+}
+
+.c-voice-card__user {
+  margin-top: 11px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 150% */
+  letter-spacing: 0.6px;
+}
+
+
+.c-voice-card__text {
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 28.8px; /* 180% */
+letter-spacing: 0.77px;
+}

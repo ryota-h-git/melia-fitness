@@ -1,0 +1,22 @@
+@use "../global" as global;
+
+.c-fv-title {
+    color: global.$text-color;
+    font-family: global.$ff-base;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: 4px;
+    @include global.mq(pc) {
+        font-size: 40px;
+    }
+}
+
+.c-fv-title--sub {
+    font-size: 22px;
+    
+    @include global.mq(pc) {
+        font-size: 32px;
+    }
+}

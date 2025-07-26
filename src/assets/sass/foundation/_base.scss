@@ -1,0 +1,28 @@
+@use "../global" as global;
+
+body {
+  color: global.$text-color;
+  font-family: global.$ff-base;
+  font-size: global.$fz-base;
+  font-weight: global.$fw-bace;
+  line-height: global.$lh-base;
+  position: relative;
+
+  &.is-checked {
+    &::before {
+        display: block;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(140, 109, 59, 0.70);
+    z-index: 8;
+    display: none;
+  }
+}

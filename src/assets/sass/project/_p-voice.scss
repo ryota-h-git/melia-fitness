@@ -1,0 +1,19 @@
+@use "../global" as global;
+
+.p-voice {
+  margin: 0 calc(50% - 50vw);
+  width: 100vw;
+  margin-top: -50px;
+  padding-top: 37px;
+}
+.p-voice__wrap {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 43px;
+  padding-bottom: 60px;
+
+  @include global.mq(pc) {
+    margin-top: 80px;
+  }
+}

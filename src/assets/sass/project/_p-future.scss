@@ -1,0 +1,31 @@
+@use "../global" as global;
+
+.p-future {
+  margin-top: 27px;
+  
+  @include global.mq(pc) {
+      margin-top: 74px;
+    }
+}
+
+
+.p-future__wrap {
+    padding-bottom: 56px;
+    margin-top: 42px;
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    
+    @include global.mq(pc) {
+        margin-top: 80px;
+        padding-bottom: 96px;
+    }
+}
+
+.p-future__bottom {
+    background: url(../img/future-bottom-img.jpg) no-repeat center center / cover;
+    height: 250px;
+    margin: 0 calc(50% - 50vw);
+	width: 100vw;
+    clip-path: polygon(100% 0, 100% 85%, 0 100%, 0 15%);
+}

@@ -1,0 +1,49 @@
+@use "../global" as global;
+
+.p-pc-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__items {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__item {
+    color: global.$text-color;
+    font-family: Lora;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 1.5px;
+  }
+
+  &__logo {
+    width: 76px;
+    height: auto;
+    flex-shrink: 0;
+    margin-top: 7px;
+    
+    @include global.mq(pc) {
+        margin-left: 20px;
+        margin-right: 23px;
+        width: 130px;
+        height: 93px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__button-wrap {
+    margin-left: auto;
+    margin-top: -4px;
+
+    @include global.mq(pc) {
+        margin-left: 57px;
+    }
+  }
+}

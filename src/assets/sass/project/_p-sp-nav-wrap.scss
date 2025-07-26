@@ -1,0 +1,61 @@
+@use "../global" as global;
+
+.p-sp-nav-wrap {
+position: relative;
+  width: 28px;
+  height: 22px;
+  margin-left: 21px;
+
+  @include global.mq(pc) {
+    display: none;
+  }
+
+  &.is-checked {
+
+    .p-sp-nav-wrap__item {
+
+    height: 1px;
+    background-color: global.$text-color;
+    transition: all 0.5s;
+
+  &:nth-child(1) {
+    width: 100%;
+      transform: rotate(45deg);
+    transform-origin: left top;   
+}
+
+&:nth-child(2){
+    display: none;
+}
+&:nth-child(3){
+    width: 100%;
+      transform: rotate(-45deg);
+    transform-origin: left ;   
+  }
+
+
+}
+  }
+}
+
+.p-sp-nav-wrap__item {
+       position: absolute;
+    height: 1px;
+    background-color: global.$text-color;
+  &:nth-child(1) {
+    top: 0;
+    width: 100%;
+  }
+
+  &:nth-child(2){
+    top: 48%;
+    translate:0 -50%; 
+    width: 22px;
+  }
+  &:nth-child(3){
+    bottom: 1px;
+    width: 16px;
+  }
+
+
+}

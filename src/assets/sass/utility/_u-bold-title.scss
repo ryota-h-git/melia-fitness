@@ -1,0 +1,6 @@
+@use "../global/" as global;
+
+.u-bold-tile {
+  line-height: 1.5em;
+  font-size: clamp(1.5rem, 1.1441rem + 1.5066vw, 2.5rem);
+}

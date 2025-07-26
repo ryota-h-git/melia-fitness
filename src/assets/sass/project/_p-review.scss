@@ -1,0 +1,23 @@
+@use "../global" as global;
+
+.p-review {
+  padding-top: 55px;
+  padding-bottom: 133px;
+  display: block;
+
+  @include global.mq(pc) {
+    padding-top: 96px;
+    padding-bottom: 192px;
+  }
+}
+
+.p-review__wrap {
+  margin-top: 42px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @include global.mq(pc) {
+    margin-top: 80px;
+  }
+}

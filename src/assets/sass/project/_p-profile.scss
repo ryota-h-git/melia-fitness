@@ -1,0 +1,81 @@
+@use "../global" as global;
+
+.p-profile__wrap {
+  display: flex;
+  flex-direction: column;
+
+  @include global.mq(pc) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.p-profile__img {
+  position: relative;
+  height: 337px;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin-top: 40px;
+
+  @include global.mq(pc) {
+    width: 360px;
+  }
+
+  & img {
+    position: absolute;
+    top: 41px;
+    left: 36px;
+    width: 100%;
+    display: block;
+    transform: scale(1.25);
+    transform-origin: center center;
+  }
+}
+.p-profile__r-wrap {
+  @include global.mq(pc) {
+    max-width: 428px;
+  }
+}
+.p-profile__name-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.p-profile__name {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.7px;
+}
+.p-profile__sns-wrap {
+  display: flex;
+  gap: 24px;
+}
+.p-profile__sns {
+  width: 40px;
+  height: 40px;
+  &.inst {
+    background-color: global.$text-color;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    & img {
+      width: 22px;
+      height: auto;
+    }
+  }
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.p-profile__text {
+  margin-top: 23px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28.8px; /* 180% */
+  letter-spacing: 0.32px;
+}

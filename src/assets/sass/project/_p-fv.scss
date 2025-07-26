@@ -1,0 +1,104 @@
+@use "../global" as global;
+
+.p-fv {
+  position: relative;
+  background: url(../img/mv-bg.png) no-repeat 51% center / cover;
+  margin: 0 calc(50% - 50vw);
+  width: 100vw;
+  height: 602px;
+  overflow: hidden;
+
+  @include global.mq(pc) {
+    height: 680px;
+    background: url(../img/mv-bg.png) no-repeat center center / cover;
+  }
+}
+.p-fv__title {
+  font-weight: 400;
+  position: absolute;
+  top: 40px;
+  translate: -50% 0;
+  left: 50%;
+  width: 100%;
+
+  @include global.mq(pc) {
+    width: fit-content;
+    top: 50%;
+    translate: 0 -50%;
+    left: calc(194 / 1440 * 100%);
+  }
+}
+
+.p-fv__title-main {
+  text-align: center;
+  display: block;
+  font-size: 22px;
+  letter-spacing: 2.05px;
+  translate: 0 -2px;
+
+  @include global.mq(pc) {
+    font-size: 32px;
+    width: fit-content;
+    text-align: left;
+    line-height: 60px;
+  }
+}
+.p-fv__img {
+  position: absolute;
+  left: calc(15 / 375 * 100%);
+  right: auto;
+  bottom: 0;
+  width: calc(600 / 1440 * 100%);
+  height: auto;
+  min-width: 396px;
+
+  @include global.mq(pc) {
+    right: calc(97 / 1440 * 100%);
+    left: auto;
+  }
+
+  @include global.mq(tb) {
+    right: 5%;
+    left: auto;
+  }
+
+  @media screen and (min-width: 1060px) and (max-width: 1219px) {
+    right: 1.8%;
+  }
+
+  & img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.p-fv__title-sub {
+  display: block;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  font-size: 13px;
+  width: fit-content;
+  margin: 10px auto 0;
+
+  & .u-text-adjust {
+    margin-right: 13px;
+    display: inline-block;
+    translate: 0px -1px;
+  }
+
+  & .u-text-offset {
+    translate: -12px 0px;
+    display: inline-block;
+    width: fit-content;
+    letter-spacing: 0.5px;
+  }
+
+  @include global.mq(pc) {
+    font-size: clamp(0.875rem, 0.732rem + 0.71vw, 1.375rem);
+    width: fit-content;
+    font-weight: 300;
+  }
+}

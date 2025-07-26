@@ -1,0 +1,25 @@
+// カラー
+$main-color: #8B6C3A;
+$accent-color: #FAFAFA;
+$text-color: #393327;
+
+
+// フォント
+$ff-en: "Lora",sans-serif;  //英字
+$ff-base: "Noto Serif JP", serif;  //日本語標準
+$fz-base: 16px;  //ベースフォントサイズ
+$fw-bace: 400;  //ベースフォントウェイト
+$lh-base: 32px;  //ベース行間
+
+//レイアウト
+
+$inner-width: 1060px;
+$sp-width: 768px;
+
+//ブレークポイント
+
+$breakpoints: (
+  'sp': 'screen and (max-width: #{$sp-width - 1px})', //（スマホ）用の表示
+  'tb': 'screen and (min-width: #{$sp-width}) and (max-width: #{ $inner-width - 1px })', // タブレット用（768〜1059px）
+  'pc': 'screen and (min-width: #{$inner-width})' //768px以上（タブレット・PC）用の表示
+) ;

@@ -1,0 +1,31 @@
+@use "../global" as global;
+
+.p-drawer-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 256px;
+    position: fixed;
+    right: -100%;
+    top: 76px;
+    bottom: 0;
+    z-index: 10;
+    background-color: #fff;
+    transition: all 0.5s;
+
+    &.is-checked {
+        right: 0;
+    }
+}
+
+.p-drawer-menu__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 56px;
+}
+
+.p-drawer-menu__link {
+  color: global.$text-color;
+}
