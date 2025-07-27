@@ -29,7 +29,7 @@
   position: relative;
   border: 1px solid global.$main-color;
   background: rgba(255, 255, 255, 0.95);
-  padding: 40px 10px;
+  padding: 38px 10px;
   z-index: 3;
 }
 .c-campaign__title {
@@ -38,7 +38,7 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
-  line-height: 45px;
+  line-height: 53px;
   letter-spacing: 1px;
   border-top: 1px solid global.$main-color;
   border-bottom: 1px solid global.$main-color;
@@ -53,8 +53,8 @@
   letter-spacing: 0.7px;
 
   width: fit-content;
-  padding: 7px 10px;
-  margin: 24px 0 0 auto;
+  padding: 6px 7px;
+  margin: 24px 12px 0 auto;
   background-color: #fff;
 
   &::before {
@@ -71,12 +71,12 @@
   &::after {
     content: "";
     position: absolute;
-    width: 11px;
-    height: 11px;
+    width: 10px;
+    height: 14px;
     border-right: 1px solid global.$main-color;
-    bottom: -6px;
+    bottom: -9px;
     background-color: #fff;
-    left: 50%;
+    left: 45%;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%, 0 70%);
     z-index: 2;
     transform: rotate(45deg);

@@ -55,7 +55,7 @@
         <div class="p-fv">
             <h2 class="p-fv__title">
                 <span class="p-fv__title-main">
-                    <span class="u-bold-tile">週一テストテスト</span>のトレーニングで<br />
+                    <span class="u-bold-tile">週一</span>のトレーニングで<br />
                     <span class="u-bold-tile">人に見せたくなる<br class="u-hidden-pc" /><span class="u-text-adjust">カラダ</span>
                     </span> <span class="u-fz-md">をつくる。</span>
                 </span>
